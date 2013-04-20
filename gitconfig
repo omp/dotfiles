@@ -1,0 +1,7 @@
+[user]
+	name = David Vazgenovich Shakaryan
+	email = dvshakaryan@gmail.com
+[core]
+	editor = vim
+[push]
+	default = simple
