@@ -23,3 +23,6 @@ set tabstop=4
 set ignorecase
 set incsearch
 set nohlsearch
+
+autocmd FileType haml setlocal expandtab tabstop=2 shiftwidth=2
+autocmd FileType ruby setlocal expandtab tabstop=2 shiftwidth=2 textwidth=79
