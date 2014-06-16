@@ -24,5 +24,8 @@ set ignorecase
 set incsearch
 set nohlsearch
 
+set foldenable
+
 autocmd FileType haml setlocal expandtab tabstop=2 shiftwidth=2
 autocmd FileType ruby setlocal expandtab tabstop=2 shiftwidth=2 textwidth=79
+autocmd FileType sh   setlocal expandtab

@@ -5,6 +5,5 @@ URxvt*background: #000000
 
 URxvt*font:                  xft:Monospace:size=10
 URxvt*searchable-scrollback: CM-s
-URxvt*geometry:              80x24
 URxvt*scrollBar:             false
-URxvt*saveLines:             50000
+URxvt*saveLines:             10000
