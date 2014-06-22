@@ -1,5 +1,9 @@
 let g:inkpot_black_background = 1
 
+if &term =~ 'screen'
+	set t_Co=256
+endif
+
 colorscheme inkpot
 filetype on
 syntax on
@@ -22,7 +26,8 @@ set tabstop=4
 
 set ignorecase
 set incsearch
-set nohlsearch
+set hlsearch
+set scrolloff=4
 
 set foldenable
 
