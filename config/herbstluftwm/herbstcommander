@@ -1,0 +1,2 @@
+dmenu_command=(dmenu -i -b -nb '#454545' -nf '#9fbc00' -sb '#9fbc00' -sf '#454545')
+prompt=herbstclient:
