@@ -6,11 +6,11 @@ shopt -s checkwinsize
 shopt -s histappend
 
 case ${TERM} in
-	xterm*|rxvt*|Eterm*|aterm|kterm|gnome*|interix)
-		PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\007"'
+	xterm*|rxvt*)
+		PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
 		;;
 	screen*)
-		PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}\033\\"'
+		PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
 		;;
 esac
 
@@ -34,5 +34,8 @@ fi
 export EDITOR=vim
 export HISTSIZE=50000
 
-rpath() { source <(~/dev/rpath/rpath.sh "${@}"); }
-alias rp='rpath'
+rbpm() { source <(~/dev/rbpm/rbpm.sh "${@}"); }
+
+mkcd() {
+    mkdir "${1}" && cd "${1}"
+}
